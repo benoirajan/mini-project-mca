@@ -44,7 +44,7 @@ def upload_files():
     # return redirect(url_for('index.htm?dir={}&{}={}&{}={}&{}={}&'.format(
     # dir,labels[0],sums[0],labels[1],sums[1],labels[2],sums[2])))
     outfile = str(dir) + '/'+filename
-    return render_template("result.htm",
+    return render_template("result.html",
                            file=outfile,
                            labels=labels, sums=sums)
 
